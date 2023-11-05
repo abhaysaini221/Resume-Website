@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background: url(contactback.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    left: auto;
+}
+
+
+.contact-section{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.contact-info{
+    color: #fff;
+    max-width: 600px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 35px;
+}
+
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+
+}
+
+.Contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact-info, .Contact-form{
+    flex: 1;
+}
+
+
+.Contact-form h2{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.Contact-form .text-box{
+    background: rgb(248, 246, 246);
+    color: black;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rbg(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* .text-box:hover
+{
+    box-shadow: 0 5px 50px 0  rgb(0, 255, 255) inset, 0 5px 50px   rgb(0, 255, 255);
+    
+} */
+
+.Contact-form .text-box:first-child{
+    margin-right: 15px;
+}
+
+
+.Contact-form textarea{
+    background:  rgb(248, 246, 246);
+    color: rgb(3, 3, 3);
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: horizontal;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rbg(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* .textarea:hover{
+    box-shadow: 0 5px 50px 0  rgb(0, 195, 255) inset, 0 5px 50px   rgb(0, 238, 255);
+} */
+
+
+.Contact-form .send-btn{
+    float: right;
+    background: red;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.8s;
+    /* transition-property: background-; */
+}
+
+.logo img{
+    width: 145px;
+    height: 150px;
+    position: relative;
+    z-index: 10;
+    margin-right: 26px;
+
+}
+
+
+/* .Contact-form .send-btn:hover{
+    background: #05B2E3;
+} */
+
+@media screen and (max-width: 1150px){
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-info, .Contact-form{
+        margin: 30px 50px;
+    }
+
+    .Contact-form h2{
+        font-size: 30px;
+    }
+    .Contact-form .text-box{
+        width: 100%;
+    }
+}
+
+/* css for alert message */
+
+.alert-success{
+    z-index: 1;
+    background: #D4EDDA;
+    font-size: 18px;
+    padding: 28px 48px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid  #3ad66e;
+    border-radius: 4px;
+
+}
+
+.alert-error{
+    z-index: 1;
+    background: #FFF3CD;
+    font-size: 18px;
+    padding: 28px 48px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-left: 8px solid  #FFA502;
+    border-radius: 4px;
+    
+}
+
+.contact-info{
+    padding-left: 0px;
+    font-size: 15px;
+}
+
+.bubbles img{
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -00px;
+}
+
+
+
+@keyframes bubble{
+    0%{
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    50%{
+        
+        opacity: 1;
+    }
+
+    70%{
+        
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 1.5s;
+}
+
+.bubbles img:nth-child(2){
+    animation-delay: 3s;
+}
+
+.bubbles img:nth-child(3){
+    animation-delay: 1s;
+}
+
+.bubbles img:nth-child(4){
+    animation-delay: 2.5s;
+}
+
+.bubbles img:nth-child(5){
+    animation-delay: 5s;
+}
+
+.bubbles img:nth-child(6){
+    animation-delay: 4s;
+}
+
+.bubbles img:nth-child(7){
+    animation-delay: 7s;
+}
+
+.logo img{
+    width: 145px;
+    height: 150px;
+    right: -45px;
+    margin-top: -1300px;
+    position: relative;
+    z-index: 10;
+    
+    /* margin-right: 20px; */
+
+
+}
+
